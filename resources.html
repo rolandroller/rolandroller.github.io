@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Eleganta by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Roland Roller - Datasets and Resources</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> <!-- charset=iso-8859-1 -->
+		<meta name="description" content="Personal homepage of Roland Roller" />
+		<meta name=author content="Roland Roller" />
+		<meta name="keywords" content="roland roller, cv, lebenslauf, publikationen, publications" />
+		<meta name="robots" content="all" />
+		<meta name="viewport" content="width=1040" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/skel-noscript.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+	</head>
+	
+	<body>
+
+	<div id="wrapper">
+
+		<!-- Header -->
+			<div id="header"></div>
+		<!-- Header -->
+		
+		<div class="container">
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Overview</a></li>
+						<li><a href="publications.html">Research</a>
+						 <ul>
+						  <li><a href="publications.html#publications">Publications</a></li>
+						  <li><a href="publications.html#talks">Talks &amp; Presentations</a></li>
+						  <li><a href="publications.html#media">Media</a></li>
+						 </ul>
+						</li>
+						<li><a href="resources.html">Resources</a><ul>
+						  <li><a href="resources.html#data">Data</a></li>
+						  <li><a href="resources.html#tools">Tools & Models</a></li>
+						 </ul>
+						</li>
+						<li><a href="work_experience.html">Misc</a><ul>
+						  <li><a href="work_experience.html#work">Work Experience</a></li>
+						  <li><a href="work_experience.html#teaching">Teaching Activities</a></li>
+						 </ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li style="width:40px;"><a href="resources_de.html"><img alt="Deutsch" class="flag" src="flagge.png" /></a></li>
+					  	<li style="width:20px;"><a href="#"><img alt="English" class="flag" src="flag.png"/></a></li>
+					</ul>
+				</nav>
+			<!-- /Nav -->
+		</div>
+		
+		<div class="container">
+			<div id="main">
+				<div class="row">
+					<div class="12u">
+						<section id="Data">
+							<header>
+							  <a name="data" class=black><h3>Data</h3></a>
+						  	</header>
+ 
+
+
+
+								<p><b>Ex4CDS - Textual Explanations for Clinical Decision Support</b><br>
+								Annotated textual explanations provided by physicians in the context of clinical decision support. The explanations are in German, have strong similarities to regular clinical notes and have been annotated on different levels (named entities, negations, temporal aspects, etc). Data can be found <a href="https://github.com/DFKI-NLP/Ex4CDS">here</a>.<br>
+
+<p><b>Biomedical diachronic concept embeddings</b><br>
+								<!--Our embeddings are trained iteratively on a range of different time slices of PubMed abstracts. We were using those embeddings to explore whether the vector space encodes information about changes of biomedical knowledge. The embeddings itself, as well as more information, will be made available soon here. </p>-->								The biomedical diachronic concept embeddings are embeddings trained on different PUBMED subsets to detect and explore changes of medical knowledge. To do so, biomedical publications were extracted from PUBMED, sliced according to their date of publication and mapped with their corresponding medical concept using MetaMap. On this data we trained embeddings on the different slices whereas each slice encapsulates the semantic knowledge of a concept within a particular period in time. To generate the chronological embeddings we followed the procedure stated <a href="https://www.aclweb.org/anthology/W19-5037" target="_blank">here</a>. To use the embeddings a compressed file is provided, which is an <a href="https://www.h5py.org/" target="_blank">HDFS file</a> and can be accessed by a python's h5py package after uncompressing using "tar" utility. Attached is the logical structure of the file where the name of leaf nodes are exactly the same as that of the tables (t_period). All the 14 tables (including complete embedding set) are included into one group named as <i>"embedding_group"<i>. Download the diachronic embeddings <a href="https://cloud.dfki.de/owncloud/index.php/s/ew2RFw2dgDiZCHt">here</a>.<br>
+				
+								<p><b>fiktive Nephrologie-Verlaufsnotizen (fictitious clinical notes)</b><br>
+								This small dataset is a collection of fictitious clinical notes from the nephrology domain written by different students (medical & lingustic). Documents imitate the style and content of clinical notes of the nephrology, thus they are suitable for testing NLP applications as real patient data is difficult to share. Note, our fictitious clinical notes are not necessarily correct from medical perspective.  <a href="http://macss.dfki.de/data/fiktive_Verlaufsnotizen.tar.gz">Download</a></p>
+								<p><b>German NegEx trigger set</b><br>
+								This set of trigger words has been created for negation detection in German clinical notes and discharge summaries. More information can be found <a href="http://macss.dfki.de/german_trigger_set.html">here</a>. <a href="http://macss.dfki.de/negex/negex_trigger_german_biotxtm_2016.txt">Download</a></p>
+
+								
+
+</p>
+
+
+						</section>
+
+						<section id="tools">
+							<header>
+							  <a name="data" class=black><h3>Tools & Models</h3></a>
+						  	</header>
+								<p><b>Graph-KD</b><br>
+								Graph-KD is a tool to explore graph structures for knowledge discovery. It bases on neo4j and includes shortest paths, node exploration and knowledge inference. The tool can be downloaded <a href="https://github.com/grv1207/Graph-KD">here</a> and tested online <a href="http://biomedical.dfki.de/graph-kd">here</a>. Further details can be found in our paper <i>Graph-KD: Exploring Relational Information for Knowledge Discovery</i> which was presented in our paper at ISWC 2019 Posters & Demonstrations [<a href="http://ceur-ws.org/Vol-2456/paper67.pdf">pdf</a>]. </p>
+
+								<p><b>Dependency Tree Parser for German medical text</b><br>
+								Using the Stanford parser we created a domain-adapted dependency tree parser specialized for German medical text. The model has been pre-trained on a large general dataset in German and then re-trained on a small set of clinical documents of the nephrology domain. The model and a more detailed description can be found <a href="http://macss.dfki.de/dependency_parser.html">here</a>.</p>
+								<p><b>Biomedical-CharTranslator</b><br>
+								Many NLP tasks apply a concept normalization (alignment), which links a given mention to an identical concept within an ontology. Applying this task to another language than English might be more challenging, as non-English data is often underrepresented. Beside that, in the biomedical domain many terms are of Greek and Latin origin. Taking this into account and knowing characteristics between two languages, a large range of biomedical terms can be easily translated from one into another language. Our biomedical CharTranslator bases on this idea and uses a simple neural translator on character level. In this way concept normalization can be improved by translating "unknown" words and extending the search by including English data. The tool and models can be found <a href="http://macss.dfki.de/char_translator.html">here</a>.</p>
+						</section>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer 
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						
+
+					</div>
+				</div>
+			</div>
+		<!-- /Footer -->
+
+	</div>
+
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				<div class=row>
+					<section class="4u">
+						<center><a href="impressum.html">Impressum</a></center>
+					</section>
+					<section = class=4u>
+						Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+					</section>
+					<section class="4u">
+						<center><a href="datenschutzerklaerung.html">Datenschutzerklärung</a></center>
+					</section>
+				</div>
+			</div>
+			
+		</div>
+
+
+	</body>
+</html>

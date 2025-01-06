@@ -1,0 +1,204 @@
+/*
+	Eleganta by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+	}
+
+	body,input,textarea,select
+	{
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header /* angepasst */
+	{
+		padding: 1em 0em; /* angepasst */
+		text-align: center;
+	}
+	
+		.homepage #header
+		{
+			padding: 5em 0em 4em 0em;
+		}
+
+		#header .container
+		{
+		}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+	}
+	
+		#logo h1
+		{
+			color: #FFF;
+		}
+	
+		#logo h1 a
+		{
+			display: block;
+			letter-spacing: 1px;
+			text-decoration: none;
+			/*text-transform: uppercase;*/
+			font-size: 3em;
+			font-weight: 900;
+			color: #FFF;
+		}
+
+		#logo span
+		{
+			display: block;
+			padding-top: 1em;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-size: 1.2em;
+			color: #FD5113;
+		}			
+			
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		background: #3c73aa; /*#2b140a; #A9D0F5; #045FB4*/
+	}
+	
+		#nav ul
+		{
+			display: block;
+			text-align: center;
+			padding:0; /* kein Abstand zw. ul und li */
+		}
+
+		#nav > ul > li
+		{
+			display: inline-block;
+			width:160px;                   		/* gleiche Breite wie Unterpunkte */
+		}
+		
+			#nav > ul > li:last-child
+			{
+				padding-right: 0;
+			}
+
+			#nav > ul > li > a,
+			#nav > ul > li > span,
+			#nav > ul > li > ul > li > a
+			{
+				display: block;
+				padding: 1.3em 1.5em;
+				letter-spacing: 1px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 200;
+				font-size: 1em;
+				outline: 0;
+				color: #6afcf4; /*#FD5113; #6afcf4;*/
+			}
+
+
+			#nav > ul > li > a:hover,
+			#nav > ul > li > ul > li > a:hover
+			{
+				color: rgba(255,255,255,1);
+			}
+
+			#nav li.active a
+			{
+				color: #FFF;
+			}
+
+			#nav > ul > li > ul
+			{
+				display: none;
+				position: absolute;				/* verändert Position keines anderen Elements, aber stört width & Transparenz */
+			}
+
+			#nav ul li:hover ul
+			{
+				display:block;
+			}
+			
+			#nav > ul > li > ul > li
+			{
+				background: #3c73aa;
+				width: 160px;					/* gleiche Breite wie oberste Menüpunkte */
+			}
+			
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		margin-bottom: 4em;
+	}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		padding: 4em 2em 4em 2em;
+	}
+
+	.homepage #main
+	{
+		padding: 2em 2em 4em 2em;
+	}
+
+	#content
+	{
+	}
+	
+	#sidebar header h2,
+	#sidebar1 header h2
+	{
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 1.8em;
+	}
+	
+	#sidebar1 h3
+	{
+		display: inline-block;
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		font-weight: 800;
+	}
+	
+nt-size: 1.8em;
+	}
+	
+	#sidebar1 h3
+	{
+		display: inline-block;
+		margin-bottom: 1em;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		font-weight: 800;
+	}
+	
+00;
+	}
+	
+
+

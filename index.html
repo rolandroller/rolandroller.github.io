@@ -1,77 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A dummy HTML page">
-    <title>Dummy Index Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-        nav ul li {
-            float: left;
-        }
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            background-color: #111;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to the Dummy Page</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>About Us</h2>
-        <p>This is a placeholder page with some dummy content to demonstrate an HTML structure.</p>
-        <p>You can customize this template according to your needs.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Dummy Company. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<!DOCTYPE HTML>
+<!--
+	Eleganta by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Roland Roller Dot Com</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> <!-- charset=iso-8859-1 -->
+		<meta name="description" content="Personal homepage of Roland Roller" />
+		<meta name=author content="Roland Roller" />
+		<meta name="keywords" content="roland roller, cv, lebenslauf, publikationen, publications" />
+		<meta name="robots" content="all" />
+		<meta name="viewport" content="width=1040" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/skel-noscript.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+	</head>
+	
+	<body>
 
+	<div id="wrapper">
+
+		<!-- Header -->
+			<div id="header"></div>
+		<!-- Header -->
+		
+		<div class="container">
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Overview</a></li>
+						<li><a href="publications.html">Research</a>
+						 <ul>
+						  <li><a href="publications.html#publications">Publications</a></li>
+						  <li><a href="publications.html#talks">Talks &amp; Presentations</a></li>
+						  <li><a href="publications.html#media">Media</a></li>
+						 </ul>
+						</li>
+						<li><a href="resources.html">Resources</a><ul>
+						  <li><a href="resources.html#data">Data</a></li>
+						  <li><a href="resources.html#tools">Tools & Models</a></li>
+						 </ul>
+						</li>
+						<li><a href="work_experience.html">Misc</a><ul>
+						  <li><a href="work_experience.html#work">Work Experience</a></li>
+						  <li><a href="work_experience.html#teaching">Teaching Activities</a></li>
+						 </ul>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+						<li style="width:40px;"><a href="index_de.html"><img alt="Deutsch" class="flag" src="flagge.png" /></a></li>
+					  	<li style="width:20px;"><a href="#"><img alt="English" class="flag" src="flag.png"/></a></li>
+					</ul>
+				</nav>
+			<!-- /Nav -->
+		</div>
+		
+		<div class="container">
+			<div id="main">
+				<div class="row">
+					<div class="12u">
+						<section>
+							<img src="pic.jpg" alt="Roland Roller" width="160px" class=me_pic /> <!-- width="210px" height="230px" -->
+							<header>
+								<h2>ABOUT MYSELF</h2>
+								<!-- <span class="byline">augue praesent urna congue rutrum</span> -->
+							</header>
+							<p>I am a senior researcher and project manager in the Speech and Language Technology group at the German Research Center for Artificial Intelligence (DFKI). I focus on natural language processing and machine learning topics with a high interest in medical use cases. My work spans classical information extraction, anonymization, clinical decision support, chatbots and LLM agents. I work on various projects related to different medical domains, such as nephrology, emergency medicine, tumor boards, and sexual medicine. Here is the list of current projects: KIBATIN, PRIMA-AI, Medinym, ADBoard, SmartNTx, and Veranda. Please contact me if you are interested in our research, collaboration/supervision or would like to visit us.
+								
+								</p>
+						</section>
+						<section>
+							<header>
+								<h3 style="clear:both;font-size:25px;"><span>Highlights</span></h3>
+							</header>
+							<table>
+								<tbody>
+
+
+								<tr><td class="left">2025</td><td class="right">Co-organization of the shared task <a href="https://sociocom.naist.jp/mednlp-chat/">MedNLP-Chat</a>: Medical Natural Language Processing for AI Chat (NTCIR-18).</tr>
+								<tr><td class="left">2025</td><td class="right">Co-organization of the symposium 'Menschlichere Medizin durch KI?: Wie neue Technologien das Gesundheitswesen bewegen' in Regensburg in June 2025.</tr>
+								<tr><td class="left">2025</td><td class="right">Co-organization of Shonan meeting <a href="https://shonan.nii.ac.jp/seminars/230/">Large Language Models for Health</a> in October 2025 in Japan.</tr>
+								
+								<tr><td class="left">2025</td><td class="right">Senior Area Chair at ACL.</tr>
+								<!--<tr><td class="left">01.12.2022</td><td class="right">Talk at RegMed Forum 2022 in Berlin: "When Performance Alone is Not Enough – Challenges and Learnings of a Clinical Decision Support System in Nephrology".</tr>
+								<tr><td class="left">14.10.2022</td><td class="right">Virtual kick-off meeting of <a href="https://innovationsfonds.g-ba.de/projekte/neue-versorgungsformen/smartntx-interaktive-erweiterte-entscheidungskompetenz-fuer-die-transplantationsnachsorge.509">smartNTX</a>.</tr>
+								<tr><td class="left">10.10.2022</td><td class="right">Accepted paper in Frontiers Public Health</tr>
+								<tr><td class="left">01.09.2022</td><td class="right">Project start of <a href="https://www.dfki.de/web/forschung/projekte-publikationen/projekt/prima-ai">PRIMA-AI</a>.</tr>
+								<tr><td class="left">01.08.2022</td><td class="right">Start of two new projects: <a href="https://www.interaktive-technologien.de/projekte/kibatin">KIBATIN</a> and <a href="https://innovationsfonds.g-ba.de/projekte/versorgungsforschung/adboard-therapeutische-assistenz-und-entscheidungsalgorithmen-fuer-hepatobiliaere-tumorboards.465">ADBoard</a>.</tr>
+								<tr><td class="left">06/07 '22</td><td class="right">Short research visit at University Paris-Saclay.</tr>
+
+<tr><td class="left">04.04.2022</td><td class="right">We have got three accepted papers for LREC 2022.</tr>
+								<!--<tr><td class="left">05.11.2021</td><td class="right">Short talk at Forum Digitale Technologien in Berlin: "<i>Big Data for Medical Analysis - Supporting Patients with Kidney Disease</i>"</tr>
+								<tr><td class="left">20.10.2021</td><td class="right">BigMedilytics has successfully ended - an EU funded lighthouse project on improving healthcare in Europe through Big Data.</tr>
+								<!--<tr><td class="left">13.10.2021</td><td class="right">Presentation at the <a href="https://www.medizininformatik-initiative.de/de/aktuelles/termine/mii-workshop-perspektive-der-semantischen-textanalyse-medizinischen-dokumenten">MII Workshop</a>: "<i>Clinical Text Processing in German, or how to reinvent the wheel (over and over again)</i>" </tr>
+								<tr><td class="left">13.09.2021</td><td class="right">BigMedilytics project meeting in Eindhoven: <a href="https://www.youtube.com/watch?v=YdpUqV520iQ&list=PLmUscFTMfpuqdgrVMDCV-I25HeOx0dILE&index=4">Podium discussion about the Blueprint</a> and <a href="https://www.youtube.com/watch?v=20dBvm4IT4k&list=PLmUscFTMfpuqdgrVMDCV-I25HeOx0dILE&index=6">presentation of the Kidney Disease Pilot</a></tr>
+								<!--<tr><td class="left">Sept. 2021</td><td class="right">I give a lecture about Artificial Intelligence at FOM this winter semester.</tr>
+								<tr><td class="left">06.05.2021</td><td class="right">Kick-Off meeting of our <a href="https://keepha.lisn.upsaclay.fr/wiki/doku.php?id=start">KEEPHA</a> project, together with our partners from LISN, NAIST, RIKEN and NII.</tr>
+								<tr><td class="left">16.02.2021</td><td class="right">Co-organizing the Multilingual Information Extraction Task at <a href="https://clefehealth.imag.fr/?page_id=606">CLEF eHealth</a>: <a href="https://sites.google.com/view/spradie-2020/home">SpRadIE -
+Information Extraction from Spanish radiology reports</a> </tr>
+								<!--<tr><td class="left">30.11.2020</td><td class="right">Talk at <a href="https://ohnlp.github.io/HealthNLP2020/healthnlp2020">HealthNLP 2020</a> <i>"Information Extraction Models for German Clinical Text"</i></tr>
+
+								<!--<tr><td class="left">Nov. 2020</td><td class="right">Participation at <a href="https://www.eulac-permed.eu/index.php/2020/07/17/virtual-3rd-eulac-permed-summer-school/">3rd EULAC PerMed Virtual Summer School</a> <i>"Implementation Research in Personalized Medicine: Ethical, Legal and Social Aspects perspective"</i></tr>-->
+
+								<!--<tr><td class="left"> Nov. 2020</td><td class="right">Participation at <a href="https://www.ai-symposium-france-germany-japan.com/">2nd French-German-Japanese Symposium: Human-centric AI</tr>
+
+								<!--<tr><td class="left">24.01.2020</td><td class="right">Talk at <a href="https://www.oberauer.com/dprg-takeoff-2020/">DPRG Takeoff 2020</a> in Berlin: <i>"K&uuml;nstliche Intelligenz in der Medizin: Hype und Realit&auml;t"</i></tr>
+								<!--<tr><td class="left">25.09.2019</td><td class="right">Talk at <a href="https://www.imh.at/veranstaltungen/hub/krankenhauskongress-forum-spital/">Forum Spital 2019</a> in Vienna: <i>"K&uuml;nstliche Intelligenz, Big Data und Vorhersagemodelle auf Basis von Gesundheitsdaten"</i></tr>
+								<!--<tr><td class="left">27.06.2019</td><td class="right">Talk at <a href="https://www.sucht.de/Veranstaltung/id-32-heidelberger-kongress.html">32. Heidelberger Kongress des Fachverbandes Sucht e.V.</a>: <i>"K&uuml;nstliche Intelligenz in der Medizin: nat&uuml;rliche Sprachverarbeitung, maschinelles Lernen und die datengetriebene Unterst&uuml;tzung von Patienten"</i> <!--[<a href="material/Suchtkongress_Heidelberg2019.pdf">slides</a>]--><!--</tr>
+								<tr><td class="left">03.05.2019</td><td class="right">Language Technology Seminar at TU Berlin: <a href="http://www.qu.tu-berlin.de/menue/studium_und_lehre/lehrangebot_ss_2019/quality_and_usability/">Knowledge Graphs</a> [<a href="material/LT Seminar 2019_ Knowledge Graphs.pdf">slides</a>]</tr>
+
+								<tr><td class="left">09.04.2019</td><td class="right">Panel Discussion at DMEA in Berlin: "<a href="https://www.dmea.de/en/Program/Events/EventDetail.jsp?eventDateId=553124&pageTitle=AI+in+the+Healthcare+System+%E2%80%93+Part+1%3A+Data+Knows+Better">AI in the Healthcare System – Part 1: Data Knows Better</a>"</tr>
+								<tr><td class="left">18.03.2019</td><td class="right">MACSS closing event at Charit&#233; Universit&auml;tsmedizin Berlin [<a href="http://macss.dfki.de/publications/DFKI_MACSSAbschlussPraesentation.pdf">slides</a>]</tr>
+								<tr><td class="left">January 2019</td><td class="right">Currently I am guest researcher at Charit&#233; Universit&auml;tsmedizin Berlin</tr>
+								<tr><td class="left">22.11.2018</td><td class="right"><a href="https://www.technologyreview.com/s/612456/how-beer-related-tweeting-climaxed-during-the-world-cup/">How beer-related tweeting climaxed during the World Cup</a> in Technology Review</tr>
+				<tr><td class="left">12.11.2018</td><td class="right">Joint talk with Wiebke D&uuml;ttmann-Rehnolt at <a href="https://www.european-big-data-value-forum.eu/program/healthcare/">European Big Data Value Forum</a> (EBDVF) 2018 in Vienna: <i>"Optimizing the care of kidney transplant patients using Big Data"</i></tr>
+				<tr><td class="left">7.11.2018</td><td class="right">Talk at <a href="https://science-match.tagesspiegel.de/future-medicine-2018/program">Future Medicine</a> 2018 in Berlin: <i>"Early detection of complications in patients after kidney transplant"</i></tr>
+				<!--<tr><td class="left">16.10.2018</td><td class="right">Talk at Smart Data Forum in Berlin: "Medical Data Analytics for Chronic Kidney Disease"</tr>
+				<tr><td class="left">8.10.2018</td><td class="right">Talk at Berlin-Brandenburgische Akademie der Wissenschaften in context of <i>Medizindiagnostik und KI</i>: "Informationszugriff und Medizindiagnostik in der Nephrologie"</tr>
+				<!--<tr><td class="left">October 2018</td><td class="right">Accepted paper "mEx - An Information Extraction Platform for German Medical Text" for Semantic Web Applications and Tools for Healthcare and Life Sciences (SWAT4HCLS'2018)</tr>
+				<tr><td class="left">August 2018</td><td class="right">Accepted paper "Football and Beer - a Social Media Analysis on Twitter in Context of the FIFA Football World Cup 2018" for <a href="https://healthlanguageprocessing.org/smm4h/">SMM4H 2018</a></tr>
+				<tr><td class="left">July 2018</td><td class="right">Accepted paper "A Domain-adapted Dependency Parser for German Clinical Text" for <a href="https://www.oeaw.ac.at/ac/konvens2018/">KONVENS 2018</a></tr>-->
+				<!--<tr><td class="left">June 2018</td><td class="right">Our book article "<a href="https://www.degruyter.com/view/books/9783110561371/9783110561371-005/9783110561371-005.xml">Integrierte Versorgung chronisch kranker Patienten am Beispiel von MACSS</a>" is published as open access in <a href="https://www.degruyter.com/viewbooktoc/product/495376#">IT f&uuml;r soziale Inklusion</a></tr>
+				<tr><td class="left">11.06.2018</td><td class="right">Language Technology Seminar at TU Berlin: <a href="http://www.qu.tu-berlin.de/menue/studium_und_lehre/lehrangebot_ss_2018/quality_and_usability/">Knowledge Graphs</a></tr>
+				<!--<tr><td class="left">08.05.2018</td><td class="right">Talk at <a href="https://multilingualbio.bsc.es/">MultilingualBIO</a> in Miyazaki: Cross-lingual Candidate Search for Biomedical Concept Normalization</tr>
+				<tr><td class="left">30.04.2018</td><td class="right">Language Technology Seminar at TU Berlin: <a href="http://www.qu.tu-berlin.de/menue/studium_und_lehre/lehrangebot_ss_2018/quality_and_usability/">Data & Language Resources</a></tr>
+				<tr><td class="left">April 2018</td><td class="right"><a href="https://www.aerzteblatt.de/nachrichten/93516/Bei-der-Verarbeitung-deutscher-klinischer-Daten-steht-die-Forschung-im-Vergleich-zum-englischen-Sprachraum-noch-am-Anfang">Article &Auml;rzteblatt</a></tr>
+				<tr><td class="left">23.03.2018</td><td class="right">Panel Discussion XPOMET in Leibzig: "Healthcare for all: The transformative potential of artificial intelligence"</tr>
+				<tr><td class="left">6.-7.03.2018</td><td class="right">BigMedilytics KickOff in Eindhoven</tr>
+				<tr><td class="left">February</td><td class="right">Accepted paper at <a href="https://multilingualbio.bsc.es/">MultilingualBIO</a> in Miyazaki</tr>
+				<tr><td class="left">29.01.2018</td><td class="right">MACSS Milestone Meeting in Berlin</tr>-->
+								</tbody>
+							</table>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer 
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						
+
+					</div>
+				</div>
+			</div>
+		<!-- /Footer -->
+
+	</div>
+
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				<div class=row>
+					<section class="4u">
+						<center><a href="impressum.html">Impressum</a></center>
+					</section>
+					<section = class=4u>
+						Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+					</section>
+					<section class="4u">
+						<center><a href="datenschutzerklaerung.html">Datenschutzerklärung</a></center>
+					</section>
+				</div>
+			</div>
+			
+		</div>
+
+
+	</body>
+</html>

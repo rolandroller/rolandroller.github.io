@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<!--
+	Eleganta by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Roland Roller Dot Com</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" /> <!-- charset=iso-8859-1 -->
+		<meta name="description" content="Personal homepage of Roland Roller" />
+		<meta name=author content="Roland Roller" />
+		<meta name="keywords" content="roland roller, cv, lebenslauf, publikationen, publications" />
+		<meta name="robots" content="all" />
+		<meta name="viewport" content="width=1040" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/skel-noscript.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style-desktop.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+	</head>
+	
+	<body>
+
+	<div id="wrapper">
+
+		<!-- Header -->
+			<div id="header"></div>
+		<!-- Header -->
+		
+		<div class="container">
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="index_de.html">&Uuml;berblick</a></li>
+						<li><a href="publications_de.html">Forschung</a>
+						 <ul>
+						  <li><a href="publications_de.html#publications">Publikationen</a></li>
+						  <li><a href="publications_de.html#talks">Vortr&auml;ge</a></li>
+						  <li><a href="publications_de.html#media">Medien</a></li>
+						 </ul>
+						</li>
+						<li><a href="resources_de.html">Downloads</a><ul>
+						  <li><a href="resources_de.html#data">Daten</a></li>
+						  <li><a href="resources_de.html#tools">Tools & Modelle</a></li>
+						 </ul>
+						</li>
+						<li><a href="work_experience_de.html">Verschiedenes</a><ul>
+						  <li><a href="work_experience_de.html#work">Arbeit</a></li>
+						  <li><a href="work_experience_de.html#teaching">Lehre</a></li>
+						 </ul>
+						</li>
+						<li><a href="contact_de.html">Kontakt</a></li>
+						<li style="width:40px;"><a href="#"><img alt="Deutsch" class="flag" src="flagge.png" /></a></li>
+					  	<li style="width:20px;"><a href="char_translator.html"><img alt="English" class="flag" src="flag.png"/></a></li>
+					</ul>
+				</nav>
+			<!-- /Nav -->
+		</div>
+		
+		<div class="container">
+			<div id="main">
+				<div class="row">
+					<div class="12u">
+						<section>
+<header>							
+	<a name="concnormal" class=black><h3>Cross-linguale Kandidatensuche f&uumlr die Normalisierung biomedizinischer Konzepte</h3></a>
+</header>
+
+Die vorliegende Dokumentation basiert auf der folgenden Publikation:<p> <i> Cross-lingual Candidate Search for Biomedical Concept Normalization. (Cross-linguale Kandidatensuche f&uumlr die Normalisierung biomedizinischer Konzepte) Roland Roller, Madeleine Kittner, Dirk Weissenborn, Ulf Leser, In Proceedings of Multilingual BIO, Miyazaki, Japan, 2018</i> 
+<p>
+Der Artikel beschreibt ein biomedizinisches &Uumlbersetzungsmodell auf Zeichenebene zur Verbesserung der Signifikanz der Kandidatensuche f&uumlr die Normalisierung von Konzepten. Hierzu wurde ein Modell mit den mehrsprachigen (parallelen) UMLS-Daten trainiert sowie zus&aumltzlich mit den Daten aus dem FreeDict-Internetlexikon angereichert. Weitere Einzelheiten finden Sie in unserer Publikation.
+
+<p><b>Hinweis:</b> F&uumlr die Nutzung der hier dargestellten Modelle ist Grundlagenwissen von Solr und Tensorflow notwendig.</p>
+
+<h3>Installation des neuralen &Uumlbersetzungsmodells:</h3>
+<p>Zum Ausf&uumlhren werden Python3, CONDA bzw. Miniconda und pip ben&oumltigt. Die Installation wurde unter Ubuntu getestet.</p>
+
+<p>Laden Sie die <a href="data/CharTranslator.zip">Quellen</a> herunter und entpacken diese. Zur die Installation der erforderlichen Bibliotheken geben Sie bitte folgenden Kommandos im Ordner <i>/CharTranslator/env/conda/</i> oder  <i>/Char-Translator/env/pip3/</i> ein:</p>
+
+<div id="a-conda-environment">
+F&uumlhren Sie aus:<p>
+<div class="boxed">
+conda env create -f environment.yml
+</div><p>
+Der folgende Code muss zur Aktivierung der neuen Umgebung ausgef&uumlhrt werden:
+<div class="boxed">
+source activate cross_lingual_candidate_search
+</div>
+oder
+<div class="boxed">
+conda activate cross_lingual_candidate_search
+</div>
+
+</div>
+<div id="b-pip3">
+</div>
+<div id="using-the-pre-trained-translation-models">
+<h3>Die vortrainierten  &Uumlbersetzungsmodelle verwenden:</h3>
+<p>Das CharTranslator-Paket enth&aumllt bereits vortrainierte in Roller et al. (2018) beschriebene Modelle (CharTranslator/models/), die sofort verwendet werden k&oumlnnen. F&uumlr unsere Publikation trainierten wir die folgenden biomedizinischen &Uumlbersetzungsmodelle:</p>
+<blockquote>
+<div><ul>
+<li>Niederl&aumlndisch   ==&gt; Englisch [du_en]</li>
+<li>Franz&oumlsisch  ==&gt; Englisch [fr_en]</li>
+<li>Deutsch  ==&gt; Englisch [de_en]</li>
+<li>Spanisch ==&gt; Englisch [es_en]</li>
+</ul>
+</div></blockquote>
+
+<div id="b-running-simple-jupyter-examples">
+<p>Das folgende Beispiel zeigt die Verwendung des dargestellten Modells:</p>
+<div class="boxed">
+<pre>
+# Loading the Model
+from model import *
+import pickle
+
+sess = tf.InteractiveSession()
+with open("PATH TO THE MODEL SETTING FILE config.pickle", "rb") as f:
+        conf = pickle.load(f)
+
+model = CharEncoderDecoder.from_config(conf, 124, "/cpu:0")
+
+sess.run(tf.global_variables_initializer())
+saver = tf.train.Saver(model.train_variables)
+saver.restore(sess, "PATH TO THE MODEL")
+
+model.decode(sess, "STRING TO TRANSLATE", max_length=20)
+</pre>
+</div>
+<p>Mit folgendem Skript k&oumlnnen die Modelle direkt getestet werden:
+<div class="boxed">
+<pre>
+#example for French
+python test_translator.py --str "rein" --lang "fr"
+# output are five possible translations which might vary: 
+# ['kidney', 'kidney', 'kidney', 'kidney', 'kidney']
+
+#example for German
+python test_translator.py --str "kopfschmerzen" --lang "de"
+# output: ['headache', 'headache', 'headaing', 'headaing', 'headache']
+</pre>
+</div>
+
+
+<h3>Neue Modelle trainieren:</h3>
+<p>Sie haben auch die M&oumlglichkeit, Ihr eigenes Modell zu trainieren. In unserer Publikation wurden UMLS und Freedict f&uumlr das Training genutzt. Auch beliebige parallele Daten k&oumlnnen verwended werden. Die Inputdaten m&uumlssen wie folgt aufgebaut sein: </p>
+<b>Allgemeines Format:</b>
+<p>Zun&aumlchst werden die Quell- sowie die Zielsprache ausgew&aumlhlt:</p>
+<p>[ein Wort der Quellsprache] <code"><span class="pre">\t</span></code> [Tupel von semantisch &aumlquivalenten W&oumlrtern in der Zielsprache, durch Tabs getrennt]</p>
+<dl>
+Ein einfaches Beispiel (Deutsch ==&gt; Englisch) ist unter CharTranslator/input_example/ zu finden</b><br>
+
+<p>Falls Sie einen &aumlhnlichen Ansatz (zum hier beschriebenen) verfolgen, bitte die Quellen von <a href="">FreeDict</a> herunterladen. Au&szligerdem m&uumlssen Sie die Daten von UMLS MRCONSO herunterladen und konvertieren.</p>
+
+<div class="boxed">
+python3 train.py --train_data FULL_PATH_OF_TRAINING_DATA --dev_data FULL_PATH_OF_DEVELOPMENT_DATA --save_dir FULL_PATH_TO_SAVE_MODEL --encoder_size INTEGER --decoder_size INTEGER 
+</div>
+
+</div>
+
+
+<div id="normalization">
+<h3>Kandidatensuche & Normalisierung:</h3>
+Im Backend unserer Kandidatensuche wurde Solr 6.5 verwendet. Eine gute Konfiguration von Solr sowie dessen richtige Verwendung beeinflusst die Resultate ma&szliggeblich. Unter den bereitgestellten Daten finden Sie das f &uumlr unsere Experimente verwendete Schema. Zur Konfiguration des Solr-Systems, m&uumlssen folgende Schritte ausgef &uumlhrt werden:
+<p>
+Starten Sie Solr:
+<div class="boxed">
+bin/solr start -f
+</div>
+<p>
+Erstellen Sie einen neuen Kern:
+<div class="boxed">
+bin/solr create -c UMLSMultiLing
+</div>
+<p>
+Beenden Sie Solr.
+
+<p>Ersetzen Sie unser Schema (CharTranslator/solr/schema) mit dem des neuen Kerns in solr-6.5/server/solr/UMLSMultiLing/conf/<p>
+
+<p>Starten Sie Solr neu.
+<p>
+Nun sollten die Daten in Ihren Kern  &uumlberf&uumlhrt werden. Falls Sie eine lokale UMLS-Installation haben, k&oumlnnen Sie direkt folgendes Python-Script anwenden, um UMLS-Daten von Ihrer Zielsprache nach Solr zu kopieren. F&uumlr unsere Experimente benutzten wir die Kommandos f&uumlr ENG, SPA, FRE, GER und DUT. Vor allem f&uumlr Englisch wird dies einige Zeit ben&oumltigen.
+<p>
+<div class="boxed">
+python3 solr_create.py --mrconso /home/rroller/data/UMLS/data/2016AB/META/MRCONSO.RRF --lang ENG --core UMLSMultiLing
+</div>
+<p>
+Das gleiche Script kann zum Einf&uumlgen von Quaero-Trainingsdaten in Solr genutzt werden (falls Sie unsere Experimente nachstellen m&oumlchten).
+<p>
+<div class="boxed">
+python3 solr_create.py --mrconso no --quaero /home/rroller/data/corpora/QUAERO_FrenchMed/corpus/train/MEDLINE/ --lang QUAERO --core UMLSMultiLing
+</div>
+<p>
+Starten Sie Solr neu.
+<p>
+Mit den folgenden Kommandos haben Sie Zugriff auf die Daten:
+<p>
+<div class="boxed">
+<pre>
+from function_set import *
+
+SOLR_CORE="UMLSMultiLing"
+target_lang="GER"
+
+mention="Krebs"
+
+resultN_TL, resultSolr_TL = fuzzySearchSolr(mention, SOLR_CORE, target_lang, 10)
+print (">", resultN_TL, resultSolr_TL)
+</pre>
+</div>
+</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer 
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						
+
+					</div>
+				</div>
+			</div>
+		<!-- /Footer -->
+
+	</div>
+
+	<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				<div class=row>
+					<section class="4u">
+						<center><a href="impressum.html">Impressum</a></center>
+					</section>
+					<section = class=4u>
+						Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
+					</section>
+					<section class="4u">
+						<center><a href="datenschutzerklaerung.html">Datenschutzerklärung</a></center>
+					</section>
+				</div>
+			</div>
+			
+		</div>
+
+
+	</body>
+</html>
